@@ -1,11 +1,11 @@
 $(function(){
   $("#doughnutChart").drawDoughnutChart([
-    { title: "Tokyo",         value : 120,  color: "#2C3E50" },
-    { title: "San Francisco", value:  80,   color: "#FC4349" },
-    { title: "New York",      value:  70,   color: "#6DBCDB" },
-    { title: "London",        value : 50,   color: "#F7E248" },
-    { title: "Sydney",        value : 40,   color: "#D7DADB" },
-    { title: "Berlin",        value : 20,   color: "#FFF" }
+    { title: "Tokyo",         value : 20,  color: "#2C3E50" },
+    { title: "San Francisco", value:  20,   color: "#FC4349" },
+    { title: "New York",      value:  15,   color: "#6DBCDB" },
+    { title: "London",        value : 10,   color: "#F7E248" },
+    { title: "Sydney",        value : 10,   color: "#D7DADB" },
+    { title: "Berlin",        value : 10,   color: "#FFF" }
   ]);
 });
 /*!
@@ -16,7 +16,7 @@ $(function(){
  * Copyright 2014 hiro
  * https://github.com/githiro/drawDoughnutChart
  * Released under the MIT license.
- * 
+ *
  */
 ;(function($, undefined) {
   $.fn.drawDoughnutChart = function(data, options) {
@@ -44,7 +44,7 @@ $(function(){
         tipOffsetY: -45,
         tipClass: "doughnutTip",
         summaryClass: "doughnutSummary",
-        summaryTitle: "TOTAL:",
+        summaryTitle: "Completion",
         summaryTitleClass: "doughnutSummaryTitle",
         summaryNumberClass: "doughnutSummaryNumber",
         beforeDraw: function() {  },
@@ -104,7 +104,7 @@ $(function(){
     var summarySize = (cutoutRadius - (doughnutRadius - cutoutRadius)) * 2,
         $summary = $('<div class="' + settings.summaryClass + '" />')
                    .appendTo($this)
-                   .css({ 
+                   .css({
                      width: summarySize + "px",
                      height: summarySize + "px",
                      "margin-left": -(summarySize / 2) + "px",
