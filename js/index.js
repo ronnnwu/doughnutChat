@@ -37,7 +37,7 @@ $(function(){
         edgeOffset : 10,//offset from edge of $this
         percentageInnerCutout : 75,
         animation : true,
-        animationSteps : 200,
+        animationSteps : 150,
         animationEasing : "easeInOutExpo",
         animateRotate : true,
         tipOffsetX: -8,
