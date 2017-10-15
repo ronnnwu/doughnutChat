@@ -1,11 +1,9 @@
 $(function(){
   $("#doughnutChart").drawDoughnutChart([
-    { title: "Tokyo",         value : 20,  color: "#2C3E50" },
-    { title: "San Francisco", value:  20,   color: "#FC4349" },
-    { title: "New York",      value:  15,   color: "#6DBCDB" },
-    { title: "London",        value : 15.9,   color: "#F7E248" },
-    { title: "Sydney",        value : 12,   color: "#D7DADB" },
-    { title: "Berlin",        value : 10,   color: "#FFF" }
+    { title: " Immunoprecipitation",value : 20,  color: "#2C3E50" },
+    { title: "Western Blot", value:  18,   color: "#FC4349" },
+    { title: "siRNA Treatment",      value:  22,   color: "#6DBCDB" },
+    { title: "Plating Cell Density",        value : 20,   color: "#F7E248" },
   ]);
 });
 /*!
@@ -37,7 +35,7 @@ $(function(){
         edgeOffset : 10,//offset from edge of $this
         percentageInnerCutout : 75,
         animation : true,
-        animationSteps : 150,
+        animationSteps : 200,
         animationEasing : "easeInOutExpo",
         animateRotate : true,
         tipOffsetX: -8,
